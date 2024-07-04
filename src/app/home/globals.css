@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#body{
+  background-color:rgb(223, 216, 216);
+}
+
+
+#Content{
+position: relative;
+z-index: 1;
+}

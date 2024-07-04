@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header{
+    
+    font-size: 150px;
+    display: inline;
+    position: relative;
+    color:white;
+}
+
+.container{
+  
+    display: flex;
+    position: absolute;
+    margin-top: -120vh;
+    left: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     strong{
+        color: white;
+        font-size: 50px;
+        position: relative;
+        left: -8vh;
+     }
+     button{
+        color: black;
+        position: relative;
+       border-radius: 20px;
+        top: 5.8vh;
+        left: 1vh;
+        min-width: 20vh;
+        min-height: 6vh;
+        background-color: white;
+        font-weight: bolder;
+        transition: all ease-in 0.3;
+     }
+}
+#img{
+background-image: url('dreambg.jpg');
+position: relative;
+background-repeat: no-repeat;
+background-size: contain;
+z-index: 3;
+min-height: 140vh;
+width: 150vh;
+overflow: hidden;
+}
+#login div{
+     overflow: hidden;
+   margin: 5vh;
+   input{
+    border: 2px solid;
+    width: 40vh;
+    
+    height: 9vh;
+    padding: 2vh;
+    border-radius: 20px;
+    transition: all ease-in 0.2s;
+   }
+}
+#create{
+    background: none;
+    width: 40vh;
+    height: 9vh;
+    padding: 2vh;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 20px;
+    transition: all ease-in 0.2s;   
+}
+
+button:hover{
+    transform: scale(1.06);
+}
+
+#login{
+    display: flex;   
+    
+    max-width: fit-content;
+    flex-direction: column;
+    gap: -10px;
+    justify-content: center;
+    align-items: center;
+}

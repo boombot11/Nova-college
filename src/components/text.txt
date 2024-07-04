@@ -1,0 +1,63 @@
+ inView(scope.current, async (info) => {
+        console.log('2nd start  ::: '+info.target.id)
+await animate("strong",{x:0,y:0,opacity:1},{duration:3})
+      
+        // This will fire when the element leaves the viewport
+      })
+        const container = useRef(null)
+    const ref = useRef(null)
+    const isInView = useInView({ root: container })
+function Stars({count}){
+    var i=0
+    const arr=[]
+const styles=(index)=>{
+
+   return  {
+    position:"relative",
+    fontSize:"70px",
+    left:`${-45}%`,
+    top:`${0+15*index}%`,
+    zIndex:"7",
+    color:"red"
+    }
+}
+for(i=0;i<count;i++){
+arr.push(<span style={styles(i)} id="stars">★</span>)
+}
+for(i=0;i<count;i++){
+    console.log(arr[i])
+    }
+return<>
+{
+    arr.map((ar,index)=>{
+  return arr[index];
+    })
+}
+</>
+}
+
+<motion.p id="special" ref={scope}
+        initial={{opacity:0} }
+        >" The History of Astronomy is A History of Recording Horizons "
+        </motion.p>
+        <div class="outer" >
+  <motion.div class="row" ref={about} initial={{opacity:0}}>
+    <div class="item"><p id="Title">SECRETORY</p>
+     <div class='img'></div>
+     </div>
+     <div class="item"><p id="Title">CHAIRPERSON</p>
+     <div class='img'></div>
+     </div>
+  </motion.div>
+  <p id="Title2">OUR FACILITY CO-ORDINATORS</p>
+  <motion.div class="row" ref={facility} initial={{opacity:0}} >
+  <div class="item"><p id="Title">SECRETORY</p>
+     <div class='img'></div>
+     </div>
+<div class="item">
+    <p id="Title">SECRETORY</p>
+     <div class='img'></div>
+     </div>
+  </motion.div>
+
+</div>

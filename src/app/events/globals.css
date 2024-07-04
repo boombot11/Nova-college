@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#body{
+  background-color:rgb(223, 216, 216);
+}
+#wrapper{
+  position: relative;
+  z-index: 3;
+}
+
+#Content{
+position: relative;
+z-index: -1;
+}
+
+#horizon
+{
+  display: inline-block;
+  min-width: 180vh;
+  min-height: 80vh;
+  margin-top: 15vh;
+margin-left: 12vh;
+max-height: 70vh;
+overflow: hidden;
+  color: white;
+
+}
